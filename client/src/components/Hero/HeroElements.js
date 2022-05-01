@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 export const Left = styled.div`
-  flex: 1;
+  flex: 6;
   justify-content: center;
 `;
 
@@ -42,12 +42,14 @@ export const SubTitle = styled.span`
   font-weight: 600;
 `;
 export const Right = styled.div`
-  flex: 1;
+  flex: 6;
   justify-content: center;
-  max-width: 50%;
-  overflow: hidden;
 `;
-export const Image = styled.img``;
+export const InnerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
 export const StyledButtonThreeDone = StyledMd(Button)`
   text-decoration: none;
   color: #fff;
