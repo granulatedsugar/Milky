@@ -40,9 +40,7 @@ const Hero = () => {
           </InnerContainer>
         </Left>
         <Right>
-          <InnerContainer>
-            <Spline scene="https://prod.spline.design/7BYZ1CgMnGYr0Lz3/scene.spline" />
-          </InnerContainer>
+          <Spline scene="https://prod.spline.design/oYm3gshOEw8pwyjR/scene.spline" />
         </Right>
       </Wrapper>
     </Container>

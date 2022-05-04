@@ -5,18 +5,22 @@ import { colors } from "../../constants/colors.js";
 
 export const Container = styled.div`
   background: linear-gradient(180deg, #dd3b74 68%, #bf1d56 32%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   margin: auto;
 `;
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 export const Left = styled.div`
+  display: flex;
   flex: 6;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Top = styled.div`
@@ -42,12 +46,13 @@ export const SubTitle = styled.span`
   font-weight: 600;
 `;
 export const Right = styled.div`
+  display: flex;
+  align-items: center;
   flex: 6;
   justify-content: center;
 `;
 export const InnerContainer = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
 `;
 export const StyledButtonThreeDone = StyledMd(Button)`
