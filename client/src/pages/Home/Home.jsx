@@ -3,11 +3,21 @@ import Hero from "../../components/Hero/Hero";
 import Navbar from "../../components/Navbar/Navbar";
 import {
   Container,
+  Header,
   ImgContainer,
+  Info,
   InfoContainer,
+  StyledButton,
+  Title,
   Wrapper,
+  ButtonWrapper,
+  StyledButtonThreeD,
+  StyledButtonNotThreeD,
 } from "./HomeElements";
-import iphoneOne from "https://github.com/granulatedsugar/Milky/blob/master/client/src/assets/images/iphoneOne.png";
+import iphoneOne from "../../assets/images/iphoneOne.png";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
   return (
@@ -15,11 +25,31 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Wrapper>
-        <InfoContainer></InfoContainer>
         <ImgContainer>
           <img src={iphoneOne} alt="iphone" />
         </ImgContainer>
+        <InfoContainer>
+          <Header>LOREM IPSUM DOLOR</Header>
+          <Title>Lorem Ipsum Dolor Sit</Title>
+          <Info>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+            voluptatem deserunt ullam molestiae doloribus laborum molestias.
+          </Info>
+          <ButtonWrapper>
+            <StyledButton name="active">LOREM IPSUM DOLOR</StyledButton>
+            <StyledButton>SIT</StyledButton>
+          </ButtonWrapper>
+          <ButtonWrapper>
+            <StyledButtonNotThreeD>
+              <ArrowBackIosNewIcon />
+            </StyledButtonNotThreeD>
+            <StyledButtonThreeD>
+              <ArrowForwardIosIcon />
+            </StyledButtonThreeD>
+          </ButtonWrapper>
+        </InfoContainer>
       </Wrapper>
+      <Card />
     </Container>
   );
 };
